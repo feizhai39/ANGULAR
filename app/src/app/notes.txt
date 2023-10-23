@@ -1,0 +1,9 @@
+pipes:
+    text transformation.
+
+create pipe
+    square
+
+    ng g p square
+    ng g s common
+

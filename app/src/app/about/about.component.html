@@ -1,0 +1,39 @@
+<app-header></app-header>
+<h1>This is about component</h1>
+<button (click)="getUserList()">Click to about component</button>
+
+<div *ngFor="let user of serverUserList">
+    <img src = "{{user.avatar}}" alt="">
+    <h1>{{user.first_name}}--{{user.email}}</h1>
+</div>
+
+<div>
+<h3>1.Implemented pageName by uppercase function:</h3>
+<h3>  {{pageName | uppercase}}</h3>
+
+
+<h3>2.Display DATE/TIME by different format:</h3>
+<h3>1){{currentDate | date:'shortTime'}}</h3>
+<h3>2){{currentDate | date}}</h3>
+
+
+<h3>3.Display currency by different format:</h3>
+<h3>Price is {{price | currency}}</h3>
+
+
+<h3>4.Calculation by square pipe:</h3>
+<h4>/*Using command: ng g p square */</h4>
+<h3>{{num1}} square is:{{num1 | square}}</h3>
+<h3>{{num2}} square is:{{num2 | square}}</h3>
+</div>
+
+<div>
+    <h3>Create user:</h3>
+    <div><input type="text" placeholder="Enter Name" [(ngModel)]="name"></div>
+    <div><input type="text" placeholder="Enter Job" [(ngModel)]="job"></div>
+    <button (click)="createUser()">Create user</button>
+<h1>{{createUserResponse}}</h1>
+</div>
+
+<button (click)="navigateToContact()">Click to go to contact page</button>
+

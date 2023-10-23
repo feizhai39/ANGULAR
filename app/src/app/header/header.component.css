@@ -1,0 +1,12 @@
+li{
+    display: inline-block;
+    margin-left: 10px;
+}
+li a{
+    font-size: 25px;
+    text-decoration: none;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
